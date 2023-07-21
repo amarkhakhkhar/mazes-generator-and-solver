@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <title>Maze Generation</title>
+</head>
+
+<body>
+
+    <div id="contents">
+        <h1>Maze Generation Algorithms - An Exploration</h1>
+
+        <label for="size">Size of Maze (between 10 and 100):</label>
+        <input type="number" id="size" name="size" min="10" max="100" step="2">
+
+
+        <h3>The Backtracking Algorithm</h3>
+
+        <div class="canvas-container">
+            <canvas id="backtracking-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="backtracking-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="backtracking-maze-animation.png">
+            <button type="button" onClick="download('backtracking-maze-animation')">You can download the maze generated
+                after animating. By clicking this button</button>
+        </a>
+        <a id="download" download="backtracking-maze-animation-sol.png">
+            <button type="button" onClick="download('backtracking-maze-animation-sol')">You can download the solution of
+                maze generated
+                after solving. By clicking this button</button>
+        </a>
+
+
+
+        <h3>The Randomized Prim's Algorithm</h3>
+
+
+        <div class="canvas-container">
+
+            <canvas id="prims-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="prims-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+
+        <a id="download" download="prims-maze-animation.png">
+            <button type="button" onClick="download('prims-maze-animation')">You can download the maze generated
+                after
+                animating. By clicking this button</button>
+        </a>
+        <a id="download" download="prims-maze-animation-sol.png">
+            <button type="button" onClick="download('prims-maze-animation-sol')">You can download the solution of maze
+                generated
+                after solving. By clicking this button</button>
+        </a>
+
+        <h3>Eller's Algorithm</h3>
+
+        <div class="canvas-container">
+            <canvas id="ellers-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="ellers-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="ellers-maze-animation.png">
+            <button type="button" onClick="download('ellers-maze-animation')">You can download the maze generated after
+                animating. By clicking this button</button>
+        </a>
+        <a id="download" download="ellers-maze-animation-sol.png">
+            <button type="button" onClick="download('ellers-maze-animation-sol')">You can download the solution of maze
+                generated
+                after solving. By clicking this button</button>
+        </a>
+
+
+
+
+        <h3>The Randomized Kruskal's Algorithm</h3>
+
+        <div class="canvas-container">
+            <canvas id="kruskals-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="kruskals-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="kruskals-maze-animation.png">
+            <button type="button" onClick="download('kruskals-maze-animation')">You can download the maze generated
+                after animating. By clicking this button</button>
+        </a>
+        <a id="download" download="kruskals-maze-animation-sol.png">
+            <button type="button" onClick="download('kruskals-maze-animation-sol')">You can download the solution of
+                maze generated
+                after solving. By clicking this button</button>
+        </a>
+
+
+        <h3>The Aldous-Broder Algorithm</h3>
+
+        <div class="canvas-container">
+            <canvas id="aldous-broder-maze-animation" class="maze" width="500" height="500"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="aldous-broder-maze-animation-sol" class="maze" width="500" height="500"></canvas>
+        </div>
+
+
+        </p>
+        <a id="download" download="aldous-broder-maze-animation.png">
+            <button type="button" onClick="download('aldous-broder-maze-animation')">You can download the maze generated
+                after animating. By clicking this button</button>
+        </a>
+        <a id="download" download="aldous-broder-maze-animation-sol.png">
+            <button type="button" onClick="download('aldous-broder-maze-animation-sol')">You can download the solution
+                of maze generated
+                after solving. By clicking this button</button>
+        </a>
+
+
+        <h3>Wilson's Algorithm</h3>
+
+
+        <span id="wilsons-size">Small</span>
+
+        <div class="canvas-container">
+            <canvas id="wilsons-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="wilsons-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="wilsons-maze-animation.png">
+            <button type="button" onClick="download('wilsons-maze-animation')">You can download the maze generated after
+                animating. By clicking this button</button>
+        </a>
+        <a id="download" download="wilsons-maze-animation-sol.png">
+            <button type="button" onClick="download('wilsons-maze-animation-sol')">You can download the solution of maze
+                generated
+                after solving. By clicking this button</button>
+        </a>
+
+
+
+        <h3>The Recursive Division Algorithm</h3>
+
+        <div class="canvas-container">
+            <canvas id="recursive-division-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="recursive-division-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="recursive-division-maze-animation.png">
+            <button type="button" onClick="download('recursive-division-maze-animation')">You can download the maze
+                generated after animating. By clicking this button</button>
+        </a>
+        <a id="download" download="recursive-division-maze-animation-sol.png">
+            <button type="button" onClick="download('recursive-division-maze-animation-sol')">You can download the
+                solution of maze generated
+                after solving. By clicking this button</button>
+        </a>
+
+        <!-- <h3>The Hunt and Kill Algorithm</h3>
+
+        <div class="canvas-container">
+            <canvas id="hunt-and-kill-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="hunt-and-kill-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="hunt-and-kill-maze-animation.png">
+            <button type="button" onClick="download('hunt-and-kill-maze-animation')">You can download the maze generated
+                after animating. By clicking this button</button>
+        </a> -->
+
+        <h3>The Sidewinder Algorithm</h3>
+        <div class="canvas-container">
+            <canvas id="sidewinder-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="sidewinder-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="sidewinder-maze-animation.png">
+            <button type="button" onClick="download('sidewinder-maze-animation')">You can download the maze generated
+                after animating. By clicking this button</button>
+        </a>
+        <a id="download" download="sidewinder-maze-animation-sol.png">
+            <button type="button" onClick="download('sidewinder-maze-animation-sol')">You can download the solution of
+                maze generated
+                after solving. By clicking this button</button>
+        </a>
+
+        <h3>The Binary Tree Algorithm</h3>
+        <div class="canvas-container">
+            <canvas id="binary-tree-maze-animation" class="maze" width="505" height="505"></canvas>
+            <h1>&nbsp;&nbsp;</h1>
+            <canvas id="binary-tree-maze-animation-sol" class="maze" width="505" height="505"></canvas>
+        </div>
+        <a id="download" download="binary-tree-maze-animation.png">
+            <button type="button" onClick="download('binary-tree-maze-animation')">You can download the maze generated
+                after animating. By clicking this button</button>
+        </a>
+        <a id="download" download="binary-tree-maze-animation-sol.png">
+            <button type="button" onClick="download('binary-tree-maze-animation-sol.png')">You can download the solution
+                of maze generated
+                after solving. By clicking this button</button>
+        </a>
+
+    </div>
+
+    <script type="text/javascript" src="scripts/binary-tree.js"></script>
+    <script type="text/javascript" src="scripts/download.js"></script>
+    <script type="text/javascript" src="scripts/sidewinder.js"></script>
+    <script type="text/javascript" src="scripts/hunt-and-kill.js"></script>
+    <script type="text/javascript" src="scripts/recursive-division.js"></script>
+    <script type="text/javascript" src="scripts/wilsons.js"></script>
+    <script type="text/javascript" src="scripts/aldous-broder.js"></script>
+    <script type="text/javascript" src="scripts/kruskals.js"></script>
+    <script type="text/javascript" src="scripts/ellers.js"></script>
+    <script type="text/javascript" src="scripts/prims.js"></script>
+    <script type="text/javascript" src="scripts/backtracking.js"></script>
+    <script type="text/javascript" src="scripts/draw.js"></script>
+    <script type="text/javascript" src="scripts/solvingMaze.js"></script>
+</body>
+
+</html>
